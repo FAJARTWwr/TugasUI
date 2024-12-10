@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <!-- Outer LinearLayout with horizontal orientation -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/blue2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- Inner LinearLayout for TextViews with vertical orientation -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- First TextView (TextView1) -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:text="@string/pelayanan_kesehatan_apa_yang_sedang_anda_cari"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- Second TextView (TextView2) below TextView1 -->
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tenang_kami_bantu_carikan"
+                android:textColor="@color/abu1" />
+        </LinearLayout>
+
+        <!-- ImageView beside the TextViews -->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/doctor_image"
+            app:srcCompat="@drawable/dokter" />
+
+    </LinearLayout>
+
+    <!-- LinearLayout with search feature -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corners"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- EditText for search input -->
+
+        <!-- Search button or icon -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-9dp"
+            android:layout_weight="1"
+            android:hint="@string/temukan_layanan_kesehatan"
+            android:inputType="text"
+            android:textColorHint="@color/abu2"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-5dp"
+            android:contentDescription="@string/search_icon"
+            android:src="@drawable/search2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ImageButton
+            android:id="@+id/imageView6"
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="50dp"
+            android:onClick="rumahsakit"
+            android:background="@color/white"
+            android:contentDescription="@string/todo12"
+            app:srcCompat="@drawable/rs" />
+
+        <ImageButton
+            android:id="@+id/imageView7"
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="200dp"
+            android:onClick="klinik"
+            android:background="@color/white"
+            android:layout_marginTop="-231dp"
+            android:contentDescription="@string/todo13"
+            app:srcCompat="@drawable/klinik" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
