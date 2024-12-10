@@ -43,4 +43,5 @@
     <string name="klinik_insan_permata">Klinik Insan Permata</string>
     <string name="jl_jombang_raya_no_17_pd_aren_kec_pd_aren_kota_tangerang_selatan_banten">Jl. Jombang Raya No.17, Pd. Aren, Kec. Pd. Aren, Kota Tangerang Selatan, Banten</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
 </resources>
