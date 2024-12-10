@@ -137,6 +137,13 @@
             android:layout_marginTop="-231dp"
             android:contentDescription="@string/todo13"
             app:srcCompat="@drawable/klinik" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="maps"
+            android:text="Button" />
     </LinearLayout>
 
 

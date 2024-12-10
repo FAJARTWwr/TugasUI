@@ -20,13 +20,18 @@ class DashboardActivity : AppCompatActivity() {
         }
     }
 
-    fun rumahsakit (view: View) {
+    fun rumahsakit(view: View) {
         val intent = Intent(this, ListRSActivity::class.java)
         startActivity(intent)
     }
 
-    fun klinik (view: View) {
+    fun klinik(view: View) {
         val intent = Intent(this, MainActivity5::class.java)
+        startActivity(intent)
+    }
+
+    fun maps(view: View) {
+        val intent = Intent(this, MapsActivity2::class.java)
         startActivity(intent)
     }
 }
